@@ -9,7 +9,7 @@ A full-stack MERN application where users can read the latest news, search by ca
 | Feature         | Description                                                             |
 | --------------- | ----------------------------------------------------------------------- |
 | 🤖 AI Summaries | One-click AI summaries with key points & sentiment via Gemini or OpenAI |
-| 📰 Live News    | Top headlines and search via NewsAPI (with rich mock data fallback)     |
+| 📰 Live News    | Top headlines and article search via NewsAPI with mock data fallback    |
 | 🔐 JWT Auth     | Secure register/login with protected routes                             |
 | 🔖 Bookmarks    | Save and manage articles (up to 100 per user)                           |
 | 🕐 History      | Automatic reading history (last 50 articles)                            |
@@ -17,6 +17,34 @@ A full-stack MERN application where users can read the latest news, search by ca
 | 🔍 Search       | Full-text search with sort options                                      |
 | 📱 Responsive   | Mobile-first design with Tailwind CSS                                   |
 | ⚡ Performance  | Lazy loading, AI result caching, rate limiting                          |
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Homepage
+
+![Homepage](./screenshots/homepage.png)
+
+### 🔍 Search Page
+
+![Search](./screenshots/search.png)
+
+### 📂 Categories
+
+![Categories](./screenshots/categories.png)
+
+### 🔖 Bookmarks
+
+![Bookmarks](./screenshots/bookmark.png)
+
+### 🕒 Reading History
+
+![Reading History](./screenshots/reading-history.png)
+
+### 🌙 Dark Mode
+
+![Dark Mode](./screenshots/dark-mode.png)
 
 ---
 
@@ -242,26 +270,6 @@ Update `CATEGORIES` array in `backend/controllers/newsController.js` and the fro
 ### Switching AI providers at runtime
 
 Change `AI_PROVIDER` in `backend/.env` to `gemini` or `openai` and restart the backend.
-
----
-
-## 🚢 Production Deployment
-
-### Backend (Railway / Render / Heroku)
-
-1. Set all env vars in your hosting dashboard
-2. Set `NODE_ENV=production`
-3. Deploy the `backend/` folder
-
-### Frontend (Vercel / Netlify)
-
-1. Build: `cd frontend && npm run build`
-2. Deploy the `frontend/dist/` folder
-3. Set `VITE_API_URL` if your backend is on a different domain and update `vite.config.js` proxy
-
-### MongoDB
-
-Use [MongoDB Atlas](https://www.mongodb.com/atlas) free tier and update `MONGO_URI`.
 
 ---
 
