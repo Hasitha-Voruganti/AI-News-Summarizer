@@ -38,6 +38,10 @@ A full-stack MERN application where users can read the latest news, search by ca
 
 ![Bookmarks](./screenshots/bookmark.png)
 
+### 🤖 AI Summarization
+
+![AI Summarization](./screenshots/summarization.png)
+
 ### 🕒 Reading History
 
 ![Reading History](./screenshots/reading-history.png)
